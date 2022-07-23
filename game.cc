@@ -54,7 +54,7 @@ int main() {
     while(getCoin == false){
 	if(coin_coordinate[0] == old_coordinate[0] && coin_coordinate[1] == old_coordinate[1]) {
 
-	    cout << "Clear!" << endl;
+	    cout << "\x1b[33m" << "Clear!" << "	\x1b[39m" << endl << endl;
 	    getCoin = true;
 	}else {
 	    system("reset");
