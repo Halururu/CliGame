@@ -6,10 +6,9 @@ using namespace std;
 void playreMove(int x = 0 , int y = 0);
 void attack();
 void status();
-void maping();
+void maplord();
 
-//int old_coordinate[2] = {0 , 1};
-//int coordinate[2] = {0 , 0};
+int old_coordinate[2] = {0 , 0};
 
 int map[5][5] = {
 
@@ -27,15 +26,21 @@ int map[5][5] = {
 
 int hp = 0;
 int score = 0;
+int playInputX = 0;
+int playInputY = 0;
 
 int main() { 
     
-    //playreMove(1 , 1);
-    maping();
+    cout << "y : ";
+    cin >> playInputY;
+    cout << "x : ";
+    cin >> playInputX;
+    playreMove(playInputY , playInputX);
+    maplord();
     
 } 
 
-void maping() {
+void maplord() {
     
     cout << endl;
 
@@ -52,8 +57,8 @@ void maping() {
     } 
     cout << endl;
 }
-/*
-void playreMove(int x = 0 , int y = 0) {
+
+void playreMove(int x , int y) {
     
     map[old_coordinate[0]][old_coordinate[1]] = 0;
 
@@ -64,4 +69,3 @@ void playreMove(int x = 0 , int y = 0) {
 
 }
 
-*/
