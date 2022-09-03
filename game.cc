@@ -9,7 +9,7 @@ void attack();
 void status();
 void maplord();
 void InputMoveTest(int v);
-
+//a
 int old_coordinate[2] = {0 , 0};
 
 int map[8][16] = {
